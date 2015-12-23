@@ -5,20 +5,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+ 	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
 	<title>Maqueta</title>
 	<link rel="stylesheet" href="">
 </head>
 <body>
 	<div class="container-fluid">
-  		<div class="row">
-  			<div class="col-xs-12">
- 			<hr>
- 			<div class="col-xs-8"><h4>Ingreso de Lectura</h4></div>
-			<div class="col-xs-4"><a href="#" title="" id="salir" class="glyphicon glyphicon-off es-left"> logout</a></div>	
-				
-			<hr>
-  			</div>
-  		</div>
+
   		<div class="row">
   			<div class="col-sm-12">
  			<hr>
@@ -48,13 +44,35 @@
 			</div>
   		</div>
 	</div>
+
+<div id="dialog-message" title="Download complete">
+  <p>
+    <span class="ui-icon ui-icon-circle-check" style="float:left; margin:0 7px 50px 0;"></span>
+    Your files have downloaded successfully into the My Downloads folder.
+  </p>
+  <p>
+    Currently using <b>36% of your storage space</b>.
+  </p>
+</div>
+
 	<div class="container-fluid footer">
 
 	</div>
 </body>
 <script type="text/javascript" src="js/jquery-1.11.2.js"></script>
 <script>
+
 $(document).ready(function(){
+    
+    		  $( "#dialog-message" ).dialog({
+      modal: true,
+      buttons: {
+        Ok: function() {
+          $( this ).dialog( "close" );
+        }
+      }
+    });
+
     $("#cargar").click(function(){
     	alert("Cargando...");
 		window.location="rutas.html";
@@ -66,7 +84,8 @@ $(document).ready(function(){
     });
 
     $("#fotos").click(function(){
-		window.location="foto.html";
+
+		//window.location="foto.html";
     });
     $("#salir").click(function(){
 		window.location="index.html";
