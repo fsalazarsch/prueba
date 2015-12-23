@@ -45,15 +45,6 @@
   		</div>
 	</div>
 
-<div id="dialog-message" title="Download complete">
-  <p>
-    <span class="ui-icon ui-icon-circle-check" style="float:left; margin:0 7px 50px 0;"></span>
-    Your files have downloaded successfully into the My Downloads folder.
-  </p>
-  <p>
-    Currently using <b>36% of your storage space</b>.
-  </p>
-</div>
 
 	<div class="container-fluid footer">
 
@@ -63,15 +54,7 @@
 <script>
 
 $(document).ready(function(){
-    
-    		  $( "#dialog-message" ).dialog({
-      modal: true,
-      buttons: {
-        Ok: function() {
-          $( this ).dialog( "close" );
-        }
-      }
-    });
+
 
     $("#cargar").click(function(){
     	alert("Cargando...");
@@ -84,7 +67,7 @@ $(document).ready(function(){
     });
 
     $("#fotos").click(function(){
-
+		alert('Aqui se selecciona y envia la foto');
 		//window.location="foto.html";
     });
     $("#salir").click(function(){
