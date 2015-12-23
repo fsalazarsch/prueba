@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<title>Demo app </title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<div class="container-fluid">
+  		<div class="row">
+  			<div class="col-xs-12">
+ 			<hr>
+ 			<div class="col-xs-8"><h4>Ingreso de Lectura</h4></div>
+			<div class="col-xs-4"><a href="#" title="" id="salir" class="glyphicon glyphicon-off es-left"> logout</a></div>	
+				
+			<hr>
+  			</div>
+  		</div>
+  		<div class="row">
+  			<div class="col-sm-12">
+	  			<div class="row">
+		  			<div class="col-sm-6 col-md-offset-2">
+						<div class="form">
+							<form  action="#"  method="GET">
+								<div class="form-group">
+									<label for="select_libro" class="sr-only">Libro</label>
+									<select class="form-control" id="select_libro">
+										<option value="0">Seleccione Libro</option>
+										<option value="1">11223344</option>
+										<option value="2">11223355</option>
+										<option value="3">11223366</option>
+										<option value="4">11223377</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="select_Cliente" class="sr-only">Clientes</label>
+									<select class="form-control" id="select_Cliente">
+										<option value="0">Seleccione Cliente</option>
+										<option value="1">11223344</option>
+										<option value="2">11223355</option>
+										<option value="3">11223366</option>
+										<option value="4">11223377</option>
+									</select>
+								</div>
+
+								<hr>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="row">
+					<div class="col-xm-12">
+						<div class="f-right">
+							<button class="btn btn-custom"  type="button" value="Input" id="vermas">Ver mas</button>
+						</div>
+					</div>
+					</div>	
+					<div class="col-xm-12 scroll">
+						<table class="table table-responsive table-hover ">
+							<caption>Titulo de la tabla</caption>
+							<thead>
+								<tr>
+									<th>Nro.</th>
+									<th>Co. Le.</th>
+									<th>Nro. Med.</th>
+									<th>Marca. Med.</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>510</td>
+									<td>9922335544</td>
+									<td>CCM</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>520</td>
+									<td>9922335544</td>
+									<td>FAE</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>530</td>
+									<td>9922335544</td>
+									<td>FAE</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>540</td>
+									<td>9922335544</td>
+									<td>FAE</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>550</td>
+									<td>9922335544</td>
+									<td>FAE</td>
+								</tr>
+								
+								
+								<tr class="pad2">
+									<td>6</td>
+									<td>560</td>
+									<td>9922335544</td>
+									<td>FAE</td>
+								</tr>
+								<tr class="pad2">
+									<td>7</td>
+									<td>570</td>
+									<td>9922335544</td>
+									<td>FAE</td>
+								</tr>
+								<tr class="pad2">
+									<td>8</td>
+									<td>580</td>
+									<td>9922335544</td>
+									<td>FAE</td>
+								</tr>
+								<tr class="pad2">
+									<td>9</td>
+									<td>580</td>
+									<td>9922335544</td>
+									<td>FAE</td>
+								</tr>
+								<tr class="pad2">
+									<td>10</td>
+									<td>580</td>
+									<td>9922335544</td>
+									<td>FAE</td>
+								</tr>
+							
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+  		</div>
+		  		
+	</div>
+	<div class="container-fluid footer">
+		<div class="row lol">
+			<div class="col-xs-12">
+				<button class="btn btn-custom"  type="button" value="Input" id="refrescar">Refrescar</button>
+				<button class="btn btn-custom"  type="button" value="Input" id="sincronizar">Sincronizar</button>
+				<button class="btn btn-custom"  type="button" value="Input" id="detalle">Detalle</button>						
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+<script>
+$(document).ready(function(){
+   //$(".pad2").hide();
+
+    $("#vermas").click(function(){
+    	var html = $("tbody").html();
+    	var i = 0, j = 11;
+    	while(i < 5){
+    	html +='<tr class="pad2"><td>'+(i+j)+'</td><td>580</td><td>9922335544</td><td>FAE</td></tr>';
+		
+		$("tbody").html(html);
+		i++;
+		}
+
+		//$(".pad2").toggle();
+
+		
+    });
+    
+
+    $("#detalle").click(function(){
+		window.location="detalle.html";
+    });
+    $("#salir").click(function(){
+		window.location="index.html";
+    });
+    $("#sincronizar").click(function(){
+		window.location="sincronizar.html";
+    });
+});
+</script>
+</html>

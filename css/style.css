@@ -1,0 +1,80 @@
+body {
+  background-color: #ffffff;
+  margin-bottom:60px;
+
+}
+.logo{
+	width: 100px;
+	text-align: left;
+}
+.chisp_logo{
+	min-width: 100px;
+	max-width: 100px;
+	text-align: right;
+	padding-left: 0px;
+}
+.form{
+	max-width: 400px;
+}
+.container-fluid{
+	margin: 0 auto !important;
+}
+.esp{
+	margin-bottom: 5px;
+}
+h1{
+	color: #676767;
+}
+h4{
+	color: #676767;
+}
+.text_blanco{
+	color: #676767;
+}
+caption{
+	color: #676767;
+}
+.btn-custom{
+	color:#eaebec;
+	background-color: #6785a9;
+
+}
+.btn-custom:hover
+{
+	background-color: #eaebec;
+}
+.scroll{
+	max-height: 300px;
+	margin-bottom: 10px;
+	overflow:scroll;
+}
+.footer{
+	height: 20px;
+}
+.es-left{
+	margin-left: 50px;
+	float: right;
+}
+.borde_text{
+	border-style: solid;
+	border-width: 0px 1px 1px 1px;
+	border-color:#6785a9;
+}
+
+.f-left{
+	float:left;
+}
+.f-right{
+	float:right;
+	margin-right: 20px;
+}
+.footer{
+	background-color:#FFFFFF;
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    height:50px;
+    margin-bottom:0px !important;
+    padding-top: 10px !important;
+}

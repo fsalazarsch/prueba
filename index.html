@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<title>Maqueta</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="col-sm-6 max_logo">
+					<img src="img/logo-endesa.jpg" alt="" class="logo">
+				</div>
+			</div>
+  		</div>
+  		<div class="row">
+  			<div class="col-sm-12">
+ 			<hr>
+				<h4>Login</h4>
+			<hr>
+  			</div>
+  		</div>
+  		<div class="row">
+  			<div class="col-sm-12">
+  			<div class="col-sm-6 col-md-offset-2">
+				<div class="form">
+					<form  action="#"  method="GET">
+				        <label for="txt_folio" class="sr-only">Folio</label>
+				        <input type="input" id="txt_folio" name="txt_folio" class="form-control esp" placeholder="Folio" required autofocus>
+						<label for="txt_user" class="sr-only">Usario</label>
+				        <input type="input" id="txt_user" name="txt_user" class="form-control esp" placeholder="Usuario" required autofocus>
+				        <label for="txt_pass" class="sr-only">Password</label>
+				        <input type="password" id="txt_pass" name="txt_pass" class="form-control esp" placeholder="Password" required>
+				        <div class="checkbox">
+    						<label>
+      						<input type="checkbox"> inicial
+    						</label>
+  						</div>
+						<br>
+						<button class="btn btn-custom"  type="button" value="Input" id="salir">Cancelar</button>
+			       		<button class="btn btn-custom"  type="button" value="Input" id="ingresar">Ingresar</button>
+					</form>
+				</div>
+			</div>
+			</div>
+  		</div>
+	</div>
+
+</body>
+<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+<script>
+$(document).ready(function(){
+    $("#ingresar").click(function(){
+		window.location="rutas.html";
+    });
+});
+$(document).ready(function(){
+    $("#salir").click(function(){
+		window.location="index.html";
+    });
+});
+</script>
+</html>
