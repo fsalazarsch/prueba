@@ -54,11 +54,16 @@
 <script type="text/javascript" src="js/jquery-1.11.2.js"></script>
 <script>
 $(document).ready(function(){
-    $("#ingresar").click(function(){
+
+ $("#ingresar").click(function(){
+	if( ($("#txt_folio").val() == "" ) || ($("#txt_user").val() == "" ) || ($("#txt_pass").val() == "" ))
+		alert('Numero de Folio, Usuario o contraseña no puede ser vacío');
+	else
+   
 		window.location="rutas.html";
     });
-});
-$(document).ready(function(){
+
+
     $("#salir").click(function(){
 		window.location="index.html";
     });
