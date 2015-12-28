@@ -71,7 +71,7 @@
 						</div>
 						<div class="col-xs-4 text-center">
 							
-							<button class="btn btn-custom" onclick="capturePhotoWithFile();" type="button" value="Input" id="fotos">Fotos</button>
+							<button class="btn btn-custom" onclick="" type="button" value="Input" id="fotos">Fotos</button>
 						</div>
 					</div>
 				</div>
@@ -91,23 +91,29 @@ $(document).ready(function(){
 
 
     $("#cargar").click(function(){
-    	alert("Cargando...");
+    	alert("Sincronizando / Cargando.");
 		window.location="rutas.html";
     });
 
     $("#descargar").click(function(){
-    	alert("Descargando...");
+    	alert("Sincronizando / Descargando.");
 		window.location="#";
     });
 
     $("#salir").click(function(){
 		window.location="index.html";
     });
-});
 
     $("#volver").click(function(){
 		window.location="rutas.html";
     });
 
+    $("#fotos").click(function(){
+    	alert("Sincronizando / Fotos.");
+    });
+
+});
+
+    
 </script>
 </html>
